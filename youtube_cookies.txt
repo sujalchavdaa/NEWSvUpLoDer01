@@ -1,4 +1,3 @@
-
 # Netscape HTTP Cookie File
 
 .youtube.com	TRUE	/	TRUE	1766335986	VISITOR_INFO1_LIVE	xlTr02bZw3o
