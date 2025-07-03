@@ -517,9 +517,9 @@ async def start(bot, m: Message):
         await start_message.edit_text(
             f"> Hey 🌚 {m.from_user.first_name}! 🌝\n\n"
             f"➠ This bot is just for Testing...💀\n\n"
-            f"➠ Use /xtract to extract from .txt (Auto 🚀)\n"
+            f"➠ Use /sujal to extract from .txt (Auto 🚀)\n"
             f"➠ Use /help for full guide 📖\n\n"            
-            f">Creator: [𝗖𝗛𝗢𝗦𝗘𝗡 𝗢𝗡𝗘 ⚝](http://t.me/CHOSEN_ONEx_bot)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
+            f">Creator: [𓍯𝙎𝙪𝙟𝙖𝙡⚝](http://t.me/Lallantoop)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
         )
 
            
