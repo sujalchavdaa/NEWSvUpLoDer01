@@ -62,13 +62,13 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-AUTH_USER = os.environ.get('AUTH_USERS', '6947378236').split(',')
+AUTH_USER = os.environ.get('AUTH_USERS', '8118667253').split(',')
 AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
 if int(OWNER) not in AUTH_USERS:
     AUTH_USERS.append(int(OWNER))
     
 CHANNEL_OWNERS = {}
-CHANNELS = os.environ.get('CHANNELS', '-1002460920533').split(',')
+CHANNELS = os.environ.get('CHANNELS', '-1002799217873').split(',')
 CHANNELS_LIST = [int(channel_id) for channel_id in CHANNELS if channel_id.isdigit()]
 
 cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
@@ -85,16 +85,16 @@ photozip = 'https://envs.sh/cD_.jpg'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="💞 Contact 🦁", url="http://t.me/CHOSEN_ONEx_bot")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="💞 Contact 🦁", url="http://t.me/Lallantoop")]])
 keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton(text="💎 LevelUp ✈️", url="https://t.me/II_LevelUP_II"), InlineKeyboardButton(text="✈️ Support Group 💞", url="https://t.me/GeniusJunctionX")],
+        [InlineKeyboardButton(text="💎 LevelUp ✈️", url="https://t.me/+NaaLTuxjRIIyNjk9"), InlineKeyboardButton(text="✈️ Support Group 💞", url="https://t.me/+2XthSlJKExA4MjQ1")],
 ])
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://freeimage.host/i/F7C0ib9",
-    "https://freeimage.host/i/F7C06RS",
-    "https://freeimage.host/i/F5iVEx4",
+    "https://envs.sh/Qt9.jpg/IMG20250621443.jpg",
+    "https://envs.sh/Fio.jpg/IMG2025070370.jpg",
+    "https://envs.sh/Fir.jpg/IMG20250703829.jpg",
     # Add more image URLs as needed
 ]
 
@@ -410,7 +410,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception as e:
         await m.reply_text(f"<b>Failed Reason:</b>\n<blockquote><b>{str(e)}</b></blockquote>")
     finally:
-        await m.reply_text("🕊️Done Baby💞")
+        await m.reply_text("🌸Done Lala🌸")
 
 
 @bot.on_message(filters.command(["yt2m"]))
@@ -456,7 +456,7 @@ async def yt2m_handler(bot: Client, m: Message):
 
 @bot.on_message(filters.command(["stop"]))
 async def stop_handler(_, m: Message):
-    await m.reply_text(">😘 𝗦𝘁𝗼𝗽𝗽𝗲𝗱 𝗕𝗮𝗯𝘆 🌝", True)
+    await m.reply_text(">✌𝕊𝕋𝕆ℙ 𝕃𝔸𝕃𝔸 ✌", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 @bot.on_message(filters.command("start"))
@@ -509,7 +509,7 @@ async def start(bot, m: Message):
             f"✅ You are an <b>Authorized User Cutie</b> 😉\n\n"
             f"➠ Use /xtract to extract from .txt (Auto 🚀)\n\n"
             f"➠ Use /help for full guide 📖\n\n"
-            f">Creator: [𝗖𝗛𝗢𝗦𝗘𝗡 𝗢𝗡𝗘 ⚝](http://t.me/CHOSEN_ONEx_bot)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
+            f">Creator: [𓍯𝙎𝙪𝙟𝙖𝙡⚝](http://t.me/Lallantoop)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
         )
         
     else:
@@ -553,37 +553,38 @@ async def info(bot: Client, update: Message):
 @bot.on_message(filters.command(["help"]))
 async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
-        f"💥 𝐁𝐎𝐓𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒\n\n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n" 
-        f"📌 𝗠𝗮𝗶𝗻 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:\n\n"  
-        f"➥ /start – Bot Status Check\n"
-        f"➥ /xtract3 – Extract from .txt (Auto)\n"
-        f"➥ /y2t – YouTube → .txt Converter\n"  
-        f"➥ /ytm – YT .txt → .mp3 downloader\n"  
-        f"➥ /yt2m – YT link → .mp3 downloader\n"  
-        f"➥ /t2t – Text → .txt Generator\n" 
-        f"➥ /stop – Cancel Running Task\n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n" 
-        f"⚙️ 𝗧𝗼𝗼𝗹𝘀 & 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀: \n\n" 
-        f"➥ /cookies – Update YT Cookies\n" 
-        f"➥ /id – Get Chat/User ID\n"  
-        f"➥ /info – User Details\n"       
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-        f"👤 𝐔𝐬𝐞𝐫 𝐀𝐮𝐭𝐡𝐞𝐧𝐭𝐢𝐜𝐚𝐭𝐢𝐨𝐧: **(OWNER)**\n\n" 
-        f"➥ /addauth xxxx – Add User ID\n" 
-        f"➥ /remauth xxxx – Remove User ID\n"  
-        f"➥ /users – Total User List\n"  
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-        f"📁 𝐂𝐡𝐚𝐧𝐧𝐞𝐥𝐬: **(Auth Users)**\n\n" 
+        f"•─∘❉𝐁𝐎𝐓𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒❉∘─•\n"
+        f" ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢\n" 
+        f"🌸 𝗠𝗮𝗶𝗻 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:\n\n"  
+        f"➤ /start – Bot Status Check\n"
+        f"➤ /sujal – Extract from .txt (Auto)\n"
+        f"➤ /y2t – YouTube → .txt Converter\n"  
+        f"➤ /ytm – YT .txt → .mp3 downloader\n"  
+        f"➤ /yt2m – YT link → .mp3 downloader\n"  
+        f"➤ /t2t – Text → .txt Generator\n" 
+        f"➤ /stop – Cancel Running Task\n"
+        f" ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢\n" 
+        f"🌸 𝗧𝗼𝗼𝗹𝘀 & 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀: \n\n" 
+        f"➤ /cookies – Update YT Cookies\n" 
+        f"➤ /id – Get Chat/User ID\n"  
+        f"➤ /info – User Details\n"  
+        f"➤ /logs – View Bot Activity\n"
+        f" ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢\n"
+        f"🌸 𝐔𝐬𝐞𝐫 𝐀𝐮𝐭𝐡𝐞𝐧𝐭𝐢𝐜𝐚𝐭𝐢𝐨𝐧: **(OWNER)**\n\n" 
+        f"➤ /addauth xxxx – Add User ID\n" 
+        f"➤ /rmauth xxxx – Remove User ID\n"  
+        f"➤ /users – Total User List\n"  
+        f" ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢\n"
+        f"🌸 𝐂𝐡𝐚𝐧𝐧𝐞𝐥𝐬: **(Auth Users)**\n\n" 
         f"➥ /addchnl -100xxxx – Add\n" 
         f"➥ /remchnl -100xxxx – Remove\n"  
         f"➥ /channels – List - (OWNER)\n"  
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-        f"💡 𝗡𝗼𝘁𝗲:\n\n"  
-        f"• Send any link for auto-extraction\n"  
-        f"• Supports batch processing\n\n"  
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-        f"> ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : {CREDIT} 💻\n"
+        f"▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢\n"
+        f"🌸 𝗡𝗼𝘁𝗲:\n\n"  
+        f"❁ Send any link for auto-extraction\n"  
+        f"❁ Supports batch processing\n\n"  
+        f"▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢\n"
+        f"> ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : {CREDIT} \n"
         )
     )                    
           
@@ -597,7 +598,7 @@ async def send_logs(client: Client, m: Message):  # Correct parameter name
     except Exception as e:
         await m.reply_text(f"Error sending logs:\n<blockquote>{e}</blockquote>")
 
-@bot.on_message(filters.command(["xtract"]))
+@bot.on_message(filters.command(["sujal"]))
 async def txt_handler(bot: Client, m: Message):        
     editable = await m.reply_text(f"**🔹Hey I am Poweful TXT Downloader 📥 Bot.\n🔹Send me the txt file and wait.\n\n<blockquote><b>𝗡𝗼𝘁𝗲:\nAll input must be given in 20 sec</b></blockquote>**")
 
@@ -706,7 +707,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
 
-    await editable.edit(f"**🌚 Enter Your Name 🌝 or send /d for use default**")
+    await editable.edit(f"**🎀 Enter Your Name 🎀 or send /d for use default**")
     try:
         input3: Message = await bot.listen(editable.chat.id, timeout=20)
         raw_text3 = input3.text
