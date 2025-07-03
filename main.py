@@ -507,7 +507,7 @@ async def start(bot, m: Message):
         await start_message.edit_text(
             f">🌟 Hey {m.from_user.first_name}! 🌟\n\n"
             f"✅ You are an <b>Authorized User Cutie</b> 😉\n\n"
-            f"➠ Use /xtract to extract from .txt (Auto 🚀)\n\n"
+            f"➠ Use /sujal to extract from .txt (Auto 🚀)\n\n"
             f"➠ Use /help for full guide 📖\n\n"
             f">Creator: [𓍯𝙎𝙪𝙟𝙖𝙡⚝](http://t.me/Lallantoop)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
         )
